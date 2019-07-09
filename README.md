@@ -1,5 +1,16 @@
 # Split The Bill
 
+## Installing this app
+
+## Testing this app
+
+## Running this app
+
+This app is deployed on Heroku! :)
+Visit it here:
+
+https://splittingthebill.herokuapp.com
+
 ## User Stories
 
 ```
@@ -16,8 +27,7 @@ So that we don't all tip separately and end up tipping too much
 I would like the tip to be split between my friends and I also.
 ```
 
-## Author
+## Author / Acknowledgments
 Jordan Roberts
 
-Deployed to Heroku following this tutorial:
-https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b
+Deployed to Heroku following <a href="https://medium.com/@winnieliang/how-to-run-a-simple-html-css-javascript-application-on-heroku-4e664c541b0b">this</a> tutorial, which required making Heroku think that this was a PHP application. This is the reason for the .php file.
