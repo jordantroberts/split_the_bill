@@ -1,7 +1,5 @@
 function Bill_Splitter(){
-
   this.amount = 0;
-
 };
 
   Bill_Splitter.prototype.calculate = function(){
