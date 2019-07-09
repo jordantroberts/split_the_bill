@@ -24,4 +24,19 @@ describe('Bill_Splitter', function() {
       expect(splitter.amount).toEqual(29.6)
     });
   });
+
+  describe('reset', function() {
+    it('resets amount to 0', function(){
+      const form = document.createElement('form');
+        form.innerHTML= `<input type="text" id="cost" value=49.2/>
+                         <input type="text" id="tip" value=10/>
+                         <input type="text" id="diners" value =2/>
+                          <span id="amount"></span>
+                        `;
+        document.body.appendChild(form)
+      splitter.calculate()
+      splitter.reset()
+      expect(splitter.amount).toEqual(0);
+    });
+  });
 });
