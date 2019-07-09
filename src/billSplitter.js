@@ -1,15 +1,15 @@
 function Bill_Splitter(){
-  this.amount = 0;
-  this.diners = 0;
-  this.tip = 0;
-  this.cost = 0;
+  this.amount = 0.00;
+  this.diners = 0.00;
+  this.tip = 0.00;
+  this.cost = 0.00;
 };
 
   Bill_Splitter.prototype.calculate = function(){
 
-    this.cost = parseInt(document.getElementById("cost").value);
-    this.tip = parseInt(document.getElementById("tip").value);
-    this.diners = parseInt(document.getElementById("diners").value);
+    this.cost = parseFloat(document.getElementById("cost").value);
+    this.tip = parseFloat(document.getElementById("tip").value);
+    this.diners = parseFloat(document.getElementById("diners").value);
 
     var amount = (this.cost + this.tip) / this.diners
 

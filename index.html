@@ -16,13 +16,13 @@
   </div>
   <form onsubmit="return false;" id="form" action="#">
     How much was your meal?<br>
-    <input id="cost" type="number" name="firstname">
+    <input id="cost" type="text" name="firstname">
     <br>
     How much would you like to tip?<br>
-    <input id="tip" type="number" name="lastname">
+    <input id="tip" type="text" name="lastname">
     <br>
     How many of there are you?<br>
-    <input id="diners" type="number" name="lastname">
+    <input id="diners" type="text" name="lastname">
     <br><br>
     <input id="submit" type="submit" value="Submit">
     <br><br>
@@ -40,16 +40,16 @@
 
     var splitter = new Bill_Splitter();
 
-    $('#amount').text('£' + splitter.amount + ' each');
+    $('#amount').text('£' + splitter.amount.toFixed(2) + ' each');
 
     $('#submit').on('click', function() {
       splitter.calculate();
-      $('#amount').text('£' + splitter.amount + ' each');
+      $('#amount').text('£' + splitter.amount.toFixed(2) + ' each');
     });
 
     $('#reset').on('click', function() {
       splitter.reset()
-      $('#amount').text('£' + splitter.amount + ' each');
+      $('#amount').text('£' + splitter.amount.toFixed(2) + ' each');
     });
 
 });
