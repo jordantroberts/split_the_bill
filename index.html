@@ -37,17 +37,16 @@
 
     var splitter = new Bill_Splitter();
 
-    $('#amount').text('£' + splitter.amount);
+    $('#amount').text('£' + splitter.amount + ' each');
 
     $('#submit').on('click', function() {
-      event.preventDefault();
       splitter.calculate();
-      $('#amount').text('£' + splitter.amount);
+      $('#amount').text('£' + splitter.amount + ' each');
     });
 
     $('#reset').on('click', function() {
       splitter.reset()
-      $('#amount').text('£' + splitter.amount);
+      $('#amount').text('£' + splitter.amount + ' each');
     });
 
 });
