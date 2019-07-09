@@ -19,10 +19,8 @@ function Bill_Splitter(){
   }
 
   Bill_Splitter.prototype.reset = function() {
-
-    this.amount = 0
     document.getElementById("cost").value = "";
     document.getElementById("tip").value = "";
     document.getElementById("diners").value = "";
-
+    this.amount = 0
   }
