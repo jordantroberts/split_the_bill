@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <center>
+    <title>Bill Splitter</title>
+    <script src="./src/billSplitter.js"></script>
+  </head>
+
+  <body>
+    <section>
+    <h1>Bill Splitter</h1>
+    <h2 id="amount"></h2>
+
+  <form onsubmit="return false;" id="form" action="#">
+    How much was your meal?<br>
+    <input id="cost" type="number" name="firstname">
+    <br>
+    How much would you like to tip?<br>
+    <input id="tip" type="number" name="lastname">
+    <br>
+    How many of there are you?<br>
+    <input id="diners" type="number" name="lastname">
+    <br><br>
+    <input id="submit" type="submit" value="Submit">
+  </form>
+  </section>
+  </center>
+
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script>
+
+  $(function () {
+
+    var splitter = new Bill_Splitter();
+
+    $('#amount').text('£' + splitter.amount);
+
+    $('#submit').on('click', function() {
+      event.preventDefault();
+      splitter.calculate();
+      $('#amount').text('£' + splitter.amount);
+  });
+});
+
+  </script>
