@@ -10,4 +10,11 @@ describe('Bill_Splitter', function() {
       expect(splitter.amount).toEqual(0);
     });
   });
+
+  describe('calculate', function() {
+    it('calculates the amount due', function(){
+      splitter.calculate()
+      expect(splitter.amount).toEqual(30)
+    });
+  });
 });
