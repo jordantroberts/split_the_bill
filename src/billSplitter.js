@@ -16,3 +16,9 @@ function Bill_Splitter(){
     document.getElementById("amount").innerHTML = amount
 
   }
+
+  Bill_Splitter.prototype.reset = function() {
+
+    this.amount = 0
+
+  }

@@ -22,6 +22,8 @@
     <input id="diners" type="number" name="lastname">
     <br><br>
     <input id="submit" type="submit" value="Submit">
+    <br><br>
+    <input id="reset" type="button" value="Reset">
   </form>
   </section>
   </center>
@@ -41,7 +43,13 @@
       event.preventDefault();
       splitter.calculate();
       $('#amount').text('£' + splitter.amount);
-  });
+    });
+
+    $('#reset').on('click', function() {
+      splitter.reset()
+      $('#amount').text('£' + splitter.amount);
+    });
+
 });
 
   </script>
