@@ -20,12 +20,12 @@ I used Jasmine to test this app. If you'd like to test, please do the following:
 ## My approach
 
 <div align="center">
-    <img src="./assets/Plan.png" width="300px"</img>
+    <img src="./assets/Plan.png" width="400px"</img>
 </div>
 
 I did a rough sketch of what I would like the front end to resemble and what classes I would need in the back end. My initial thinking was perhaps two functions: one responsible for the calculation of price + tip / people, and another responsible for resetting. I didn't think that the app needed to be any more complex than this at this stage (although later I may play around with this).
 
-I later scrapped the idea of a reset function, seeing that it didn't really add to the user experience. 
+I later scrapped the idea of a reset function, seeing that it didn't really add to the user experience.
 
 ## Areas for development
 
