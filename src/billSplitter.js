@@ -13,14 +13,19 @@ function Bill_Splitter(){
 
     var amount = (this.cost + this.tip) / this.diners
 
-    if (this.cost == null)
-     {
-        alert("Please enter an amount");
-     }
-
-    this.amount = amount
-    document.getElementById("amount").innerHTML = amount
-
+    if(document.getElementById("cost").value.length == 0)
+    {
+      alert("Please enter the cost of your meal")
+      return false;
+    } else if(document.getElementById("tip").value.length == 0) {
+      alert("Please enter a tip amount. If you don't want to tip, please type '0'")
+      return false;
+    } else if(document.getElementById("diners").value.length == 0) {
+      alert("Please enter the amount of diners")
+      return false;
+    } else {
+      this.amount = amount
+    }
   }
 
   Bill_Splitter.prototype.reset = function() {
