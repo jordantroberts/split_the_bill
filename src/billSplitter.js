@@ -27,12 +27,3 @@ function Bill_Splitter(){
       this.amount = amount
     }
   }
-
-  Bill_Splitter.prototype.reset = function() {
-
-    document.getElementById("cost").value = "";
-    document.getElementById("tip").value = "";
-    document.getElementById("diners").value = "";
-    this.amount = 0
-
-  }

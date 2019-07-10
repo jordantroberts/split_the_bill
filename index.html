@@ -25,12 +25,10 @@
     <input id="diners" type="text" name="lastname">
     <br><br>
     <input id="submit" type="submit" value="Submit">
-    <br><br>
-    <input id="reset" type="button" value="Reset">
+
   </form>
   </section>
   </center>
-
 </body>
 </html>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -47,10 +45,7 @@
       $('#amount').text('£' + splitter.amount.toFixed(2) + ' each');
     });
 
-    $('#reset').on('click', function() {
-      splitter.reset()
-      $('#amount').text('£' + splitter.amount.toFixed(2) + ' each');
-    });
+
 
 });
 
