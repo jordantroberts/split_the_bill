@@ -13,14 +13,16 @@ function Bill_Splitter(){
 
     var amount = (this.cost + this.tip) / this.diners
 
-    this.amount += amount
+    this.amount = amount
     document.getElementById("amount").innerHTML = amount
 
   }
 
   Bill_Splitter.prototype.reset = function() {
+
     document.getElementById("cost").value = "";
     document.getElementById("tip").value = "";
     document.getElementById("diners").value = "";
     this.amount = 0
+
   }
