@@ -13,6 +13,11 @@ function Bill_Splitter(){
 
     var amount = (this.cost + this.tip) / this.diners
 
+    if (this.cost == null)
+     {
+        alert("Please enter an amount");
+     }
+
     this.amount = amount
     document.getElementById("amount").innerHTML = amount
 
