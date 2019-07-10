@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <center>
-    <title>Bill Splitter</title>
-    <script src="./src/billSplitter.js"></script>
-    <link rel="stylesheet" href="skeleton.css">
-  </head>
+<head>
+	<title>Bill Splitter</title>
+</head>
+<body>
+	<center>
+		<script src="./src/billSplitter.js">
+		</script>
+		<link href="skeleton.css" rel="stylesheet">
+		<section>
+			<h2>Bill Splitter</h2>
+			<h3 id="amount"></h3>
+			<div align="center"><img src="./assets/girl-and-money.png" width="150px"></div>
+			<form action="#" id="form" name="form" onsubmit="return false;">
+				How much was your meal?<br>
+				<input id="cost" name="firstname" type="text"><br>
+				How much would you like to tip?<br>
+				<input id="tip" name="lastname" type="text"><br>
+				How many of there are you?<br>
+				<input id="diners" name="lastname" type="text"><br>
+				<br>
+				<input id="submit" type="submit" value="Submit">
+			</form>
+		</section>
+	</center>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+	</script>
+	<script>
 
-  <body>
-    <section>
-    <h2>Bill Splitter</h2>
-    <h3 id="amount"></h3>
-    <div align="center">
-    <img src="./assets/girl-and-money.png" width="150px"</img>
-  </div>
-  <form onsubmit="return false;" id="form" action="#">
-    How much was your meal?<br>
-    <input id="cost" type="text" name="firstname">
-    <br>
-    How much would you like to tip?<br>
-    <input id="tip" type="text" name="lastname">
-    <br>
-    How many of there are you?<br>
-    <input id="diners" type="text" name="lastname">
-    <br><br>
-    <input id="submit" type="submit" value="Submit">
+$(function () {
 
-  </form>
-  </section>
-  </center>
-</body>
-</html>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script>
+  var splitter = new Bill_Splitter();
 
-  $(function () {
+  $('#amount').text('£' + splitter.amount.toFixed(2) + ' each');
 
-    var splitter = new Bill_Splitter();
-
+  $('#submit').on('click', function() {
+    splitter.calculate();
     $('#amount').text('£' + splitter.amount.toFixed(2) + ' each');
-
-    $('#submit').on('click', function() {
-      splitter.calculate();
-      $('#amount').text('£' + splitter.amount.toFixed(2) + ' each');
-    });
-
-
-
+  });
 });
 
-  </script>
+</script>
