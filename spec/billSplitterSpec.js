@@ -23,6 +23,22 @@ describe('Bill_Splitter', function() {
       splitter.calculate()
       expect(splitter.amount).toEqual(29.6)
     });
+
+    it('displays error message if cost field empty', function(){
+      splitter.reset()
+      spyOn(window, 'alert')
+      let form2 = document.createElement('form2');
+      form2.innerHTML= `<input type="text" id="cost" value=0/>
+                       <input type="text" id="tip" value=5/>
+                       <input type="text" id="diners" value =2/>
+                        <span id="amount"></span>
+                      `;
+      document.body.appendChild(form2)
+      splitter.calculate()
+      expect(window.alert).toHaveBeenCalledWith('Please enter the cost of your meal');
+    });
+
+
   });
 
   describe('reset', function() {
