@@ -1,5 +1,7 @@
 # Split The Bill
 
+I wanted to practice building full stack in JavaScript with
+
 ## Installing this app
 
 ## Testing this app
@@ -10,6 +12,10 @@ This app is deployed on Heroku! :)
 Visit it here:
 
 https://splittingthebill.herokuapp.com
+
+## My approach
+
+I would like to implement an option whereby a user can choose to tip by percentage rather than a specific amount.
 
 ## User Stories
 
@@ -26,6 +32,20 @@ As a diner
 So that we don't all tip separately and end up tipping too much
 I would like the tip to be split between my friends and I also.
 ```
+## Screenshots
+
+<div align="center">
+    <img src="Screenshot1.png" width="200px"</img>
+</div>
+
+<div align="center">
+    <img src="Screenshot2.png" width="200px"</img>
+</div>
+
+<div align="center">
+    <img src="Screenshot3.png" width="200px"</img>
+</div>
+
 
 ## Author / Acknowledgments
 Jordan Roberts
