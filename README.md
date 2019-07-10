@@ -1,6 +1,6 @@
 # Split The Bill
 
-I wanted to practice building full stack in JavaScript with
+I wanted to practice building full stack applications with JavaScript but also wanted to create an application that could be useful for people in the real world. Bill splitting in a restaurant is always a bit of a faff so I created an app that allows you to input the cost of your meal, the tip amount and the number of diners so that you can split the bill equally between you. 
 
 ## Using this app
 
@@ -42,15 +42,15 @@ I would like the tip to be split between my friends and I also.
 ## Screenshots
 
 <div align="center">
-    <img src="Screenshot1.png" width="350px"</img>
+    <img src="Screenshot1.png" width="280px"</img>
 </div>
 
 <div align="center">
-    <img src="Screenshot2.png" width="350px"</img>
+    <img src="Screenshot2.png" width="280px"</img>
 </div>
 
 <div align="center">
-    <img src="Screenshot3.png" width="350px"</img>
+    <img src="Screenshot3.png" width="280px"</img>
 </div>
 
 
