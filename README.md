@@ -2,20 +2,27 @@
 
 I wanted to practice building full stack in JavaScript with
 
-## Installing this app
-
-## Testing this app
-
-## Running this app
+## Using this app
 
 This app is deployed on Heroku! :)
 Visit it here:
 
 https://splittingthebill.herokuapp.com
 
+## Testing this app
+
+I used Jasmine to test this app. If you'd like to test, please do the following:
+
+1. Clone this repo
+2. `cd` into this repo in your terminal
+3. Run `open SpecRunner.html` from the command line
+
 ## My approach
 
-I would like to implement an option whereby a user can choose to tip by percentage rather than a specific amount.
+
+## Areas for development
+
+* I would like to implement an option whereby a user can choose to tip by percentage rather than a specific amount.
 
 ## User Stories
 
@@ -35,15 +42,15 @@ I would like the tip to be split between my friends and I also.
 ## Screenshots
 
 <div align="center">
-    <img src="Screenshot1.png" width="200px"</img>
+    <img src="Screenshot1.png" width="350px"</img>
 </div>
 
 <div align="center">
-    <img src="Screenshot2.png" width="200px"</img>
+    <img src="Screenshot2.png" width="350px"</img>
 </div>
 
 <div align="center">
-    <img src="Screenshot3.png" width="200px"</img>
+    <img src="Screenshot3.png" width="350px"</img>
 </div>
 
 
